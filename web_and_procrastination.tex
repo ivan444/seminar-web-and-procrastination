@@ -3,17 +3,18 @@
 \usepackage[croatian]{babel}
 \usepackage[T1]{fontenc}
 \usepackage{graphicx}
-\usepackage[numbers, square]{natbib}
 \usepackage{amsmath}
 \usepackage{lmodern}
+%\usepackage{times}
 \usepackage{titlesec}
 \usepackage[affil-it]{authblk}
+
 \pagestyle{empty}
 
 \setlength{\topmargin}{-35pt}
-\setlength{\textheight}{690pt}
-\setlength{\textwidth}{445pt}
-\setlength{\columnsep}{18pt}
+\setlength{\textheight}{24cm}
+\setlength{\textwidth}{16cm}
+\setlength{\columnsep}{0.6cm}
 \setlength{\oddsidemargin}{3pt}
 \setlength{\evensidemargin}{3pt}
 \setlength{\parindent}{0.5cm}
@@ -21,10 +22,12 @@
 \let\LaTeXtitle\title
 \renewcommand{\title}[1]{\LaTeXtitle{\Large \textbf{#1}}}
 \renewenvironment{abstract}
-{\noindent \large \bf Sažetak. \normalsize \begin{it}}
+{\noindent \large \bf Sažetak.\normalsize\begin{it}}
 {\end{it}\\}
 
 \titleformat{\section}{\large\bfseries}{\thesection.}{1em}{}
+\titleformat{\subsection}{\large\bfseries}{\thesubsection.}{1em}{}
+\titleformat{\subsubsection}{\large\bfseries}{\thesubsubsection.}{1em}{}
 
 \newenvironment{keywords}
 {\noindent {\large {\bf Ključne riječi}}.~}{}
@@ -36,20 +39,15 @@
 
 \begin{document}
 
-\title{Web and procrastination}
-%\author{Vedrana Janković \and Zoran Hranj \and Ivan Krišto}
+\title{Web and Procrastination}
 \author{Vedrana Janković}
-%\affiliation{Fakultet elektrotehnike i računarstva\\Unska 3 Zagreb}
-%\email{nist}
 \author{Zoran Hranj}
-%\affiliation{Fakultet elektrotehnike i računarstva\\Unska 3 Zagreb}
-%\email{nist}
 \author{Ivan Krišto}
-%\affiliation{Fakultet elektrotehnike i računarstva\\Unska 3}
-%\email{nist}
 \affil{Fakultet elektrotehnike i računarstva\\Unska 3, 10000 Zagreb,
 Hrvatska}
 \affil{\{vedrana.jankovic, zoran.hranj, ivan.kristo\}@fer.hr}
+
+% Uklanjanje datuma
 \date{}
 
 \maketitle
@@ -60,8 +58,7 @@ Hrvatska}
 Kad vam se jede nešto slano ili slatko, ma jednostavno kad vam se nešto jede,
 palačinke su obično najbolji izbor jer sve potrebne sastojke već imate kod kuće.
 Malo jaja, mlijeka, vode i brašna naći će se u svakoj kuhinji i sve što je
-potrebno da dođete do slasnog zalogaja je malo dobre volje!\footnote{Sve
-izvukao sa: http://www.crochef.com/index .php?page=article\&id=17}
+potrebno da dođete do slasnog zalogaja je malo dobre volje!\footnote{Sve izvukao sa: http://www.crochef.com/index .php?page=article\&id=17}
 \end{abstract}
 
 \begin{keywords}
@@ -78,15 +75,15 @@ voda ili mlijeko te da se prže na maloj količini masnoće. Uglavnom se priprem
 bez dodataka za dizanje tijesta, iako se u neke vrste dodaje prašak za pecivo ili
 soda bikarbona. Jako su rijetki recepti u kojima u palačinke ide kvasac.
 
-\section{Mali trikovi za palačinke kakve svi vole}
+\subsection{Mali trikovi za palačinke kakve svi vole}
 Mnogi vole da su palačinke mekane, tanke, lagano slatkaste i da nisu previše
 masne. Mekoća palačinki ovisi o vrsti tekućine koja se koristi za izradu smjese.
 Palačinke u kojima je dio mlijeka zamijenjen vodom bit će nešto laganije od onih
 u kojima se koristi samo mlijeko. Želite li pak dodatno pojačati taj efekt možete
 koristiti gaziranu mineralnu vodu dok neki recepti čak traže uporabu piva.
 
-Debljina palačinki naravno opet ovisi o vrsti smjese – palačinke s praškom za
-pecivo kao što su američke “pancakes“ bit će debele centimetar do centimetar i
+Debljina palačinki naravno opet ovisi o vrsti smjese – palačinke s
+praškom za pecivo kao što su američke “pancakes“ bit će debele centimetar do centimetar i
 pol dok će palačinke rasprostranjene u našim krajevima biti mnogo “elegantnije“.
 Za tanke palačinke važno je koristiti tavu s neprijanjajućom podlogom
 (napravljenom od teflona) na koju se po želji može kapnuti koja kap ulja da bi se
@@ -117,7 +114,7 @@ neutralizira manja količina alkohola. Za palačinke je najpraktičnije koristit
 malo ruma koji ima dvije prednosti: masnoća se manje osjeća, a njegova aroma se
 provlači kroz palačinku poput glazbenog leitmotiva.
 
-\section{Što se sve s palačinkama može}
+\subsubsection{Što se sve s palačinkama može}
 Prvo što pada na pamet – svašta! Krenimo od najjednostavnijih varijanti: možete
 ih posipati šećerom i mljevenim orasima, dodati im preljev od čokolade, karamela
 ili na bazi voća, možete ih premazivati najrazličitijim kombinacijama: džemom ili
@@ -172,6 +169,6 @@ imate svog asa u rukavu...
 \nocite{panian05informatickirjecnik}
 
 \bibliography{literatura}
-\bibliographystyle{plainnat}
+\bibliographystyle{plain}
 
 \end{document}
