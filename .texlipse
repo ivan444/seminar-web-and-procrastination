@@ -1,13 +1,13 @@
 #TeXlipse project settings
-#Fri Nov 06 19:11:51 CET 2009
+#Sun Nov 01 19:29:06 CET 2009
 builderNum=2
 outputDir=
 makeIndSty=
 bibrefDir=
 outputFormat=pdf
-tempDir=
+tempDir=tmp
 mainTexFile=web_and_procrastination.tex
 outputFile=web_and_procrastination.pdf
-langSpell=
+langSpell=en
 markDer=true
 srcDir=
