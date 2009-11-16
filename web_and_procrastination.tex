@@ -1,4 +1,4 @@
-\documentclass[11pt,twocolumn,english]{article}
+\documentclass[11pt,english]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[croatian]{babel}
 \usepackage[T1]{fontenc}
@@ -8,6 +8,7 @@
 \usepackage{titlesec}
 \usepackage{url}
 \usepackage[affil-it]{authblk}
+\usepackage{multicol}
 
 \pagestyle{empty}
 
@@ -56,6 +57,7 @@ Hrvatska}
 \maketitle
 \thispagestyle{empty}
 \pagestyle{empty}
+\begin{multicols}{2}
 
 \begin{abstract}
 U ovom radu obrađena je problematika prokrastinacije. Napravljen je 
@@ -291,5 +293,6 @@ trebalo bi se posvetiti ovoj temi posebice u okviru obrazovnih institucija.
 
 \bibliography{literatura}
 \bibliographystyle{plain}
+\end{multicols}
 
 \end{document}
